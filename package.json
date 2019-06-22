@@ -1,0 +1,39 @@
+{
+  "name": "@linonetwo/use-transient-updates",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "module": "dist/use-transient-updates.mjs",
+  "main": "dist/use-transient-updates.js",
+  "unpkg": "dist/use-transient-updates.umd.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "microbundle -ts",
+    "dev": "microbundle -ts watch"
+  },
+  "dependencies": {
+    "microbundle": "^0.11.0",
+    "react": "^16.8.6",
+    "react-three-fiber": "^2.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linonetwo/use-react-three-fiber-transient-updates.git"
+  },
+  "keywords": [
+    "ecs",
+    "react",
+    "encompass",
+    "game",
+    "threejs"
+  ],
+  "author": "linonetwo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linonetwo/use-react-three-fiber-transient-updates/issues"
+  },
+  "homepage": "https://github.com/linonetwo/use-react-three-fiber-transient-updates#readme"
+}
