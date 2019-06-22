@@ -1,7 +1,7 @@
 {
   "name": "@linonetwo/use-transient-updates",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hooks to do use data with rapidly changed values inside.",
   "source": "src/index.ts",
   "module": "dist/use-transient-updates.mjs",
   "main": "dist/use-transient-updates.js",
