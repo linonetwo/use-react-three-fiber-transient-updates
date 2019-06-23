@@ -1,4 +1,4 @@
-# @linonetwo/use-transient-updates
+# use-three-transient-updates
 
 [what are transient updates?](https://github.com/react-spring/zustand#transient-updates-for-often-occuring-state-changes)
 
@@ -8,9 +8,11 @@
 
 ## Usage
 
+Full example: [react-encompass-ecs-example](https://github.com/linonetwo/react-encompass-ecs-example)
+
 ```jsx
 import { useComponent } from 'react-encompass-ecs';
-import { useTransientDataList } from '@linonetwo/use-transient-updates';
+import { useTransientDataList } from 'use-three-transient-updates';
 
 function Planes() {
   const { boxes } = useComponent({ boxes: [PositionComponent] });
@@ -30,7 +32,7 @@ function Planes() {
 
 ```jsx
 import { useComponent } from 'react-encompass-ecs';
-import { useTransientData } from '@linonetwo/use-transient-updates';
+import { useTransientData } from 'use-three-transient-updates';
 
 function Plane({ position, index }: { position: { x: number, y: number }, index: number }) {
   return (
