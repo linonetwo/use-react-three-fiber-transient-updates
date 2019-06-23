@@ -1,5 +1,5 @@
-import React, { useState, useMemo, useRef, createRef } from 'react';
-import { Canvas, useRender, applyProps } from 'react-three-fiber';
+import React, { useMemo, useRef, createRef } from 'react';
+import { useRender, applyProps } from 'react-three-fiber';
 
 export function useTransientData<T>(dataSource: T, mapDataSource: (source: T) => object) {
   const bind = useRef<any>();
