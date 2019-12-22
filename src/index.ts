@@ -3,7 +3,7 @@ import { useRender, applyProps } from 'react-three-fiber';
 
 export function useTransientData<T>(dataSource: T, mapDataSource: (source: T) => object) {
   const bind = useRef<any>();
-  useRender(() => applyProps(bind.current, mapDataSource(dataSource)));
+  useRender(() => applyProps(bind.current, mapDataSource(dataSource)), false);
   return bind;
 }
 
@@ -32,7 +32,6 @@ export function useTransientDataList<T>(
       });
     },
     false,
-    [dataSources],
   );
   return refsRef.current;
 }
